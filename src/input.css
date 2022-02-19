@@ -7,4 +7,12 @@ body {
    overflow-x: hidden;
 }
 @tailwind components;
+
+.title {
+   @apply text-4xl font-extrabold text-title_clr p-2 tracking-wide dark:text-main_clr;
+}
+
+.btn {
+   @apply w-44 bg-secondary_clr px-8 py-2 rounded-l-full rounded-r-full text-white text-sm font-bold;
+}
 @tailwind utilities;
