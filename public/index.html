@@ -4,11 +4,187 @@
       <meta charset="UTF-8" />
       <meta http-equiv="X-UA-Compatible" content="IE=edge" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+      <!-- FONTS -->
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300&display=swap"
+         rel="stylesheet"
+      />
+      <!-- ICONS -->
+      <script src="https://kit.fontawesome.com/a2c234ef4d.js" crossorigin="anonymous"></script>
       <!-- CSS -->
       <link rel="stylesheet" href="output.css" />
       <title>Service Agency Landing Page</title>
    </head>
-   <body>
-      <h1>Hello!</h1>
+   <body class="bg-main_clr dark:bg-neutral-900">
+      <!-- HEADER -->
+      <header class="relative">
+         <img src="./img/bgHeader.png" alt="" class="w-screen h-[600px] lg:h-full" />
+         <div class="absolute top-0 left-0 lg:px-40 xl:px-36 xl:pt-10 2xl:px-56 2xl:pt-10">
+            <nav class="container bg-transparent py-6">
+               <div class="flex justify-between items-center">
+                  <!-- LOGO -->
+                  <div>
+                     <img src="./img/Logo.png" alt="LOGO" />
+                  </div>
+                  <!-- Primary Menu -->
+                  <div class="hidden text-white md:flex space-x-6 items-center">
+                     <a href="#">Browse Topics</a>
+                     <a href="#">How it works</a>
+                     <a href="#">FAQ</a>
+                     <a href="#">Support</a>
+
+                     <!-- DARK mode Buuton -->
+                     <button
+                        id="theme-toggle"
+                        type="button"
+                        class="text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5"
+                     >
+                        <svg
+                           id="theme-toggle-dark-icon"
+                           class="hidden w-5 h-5"
+                           fill="currentColor"
+                           viewBox="0 0 20 20"
+                           xmlns="http://www.w3.org/2000/svg"
+                        >
+                           <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
+                        </svg>
+                        <svg
+                           id="theme-toggle-light-icon"
+                           class="hidden w-5 h-5"
+                           fill="currentColor"
+                           viewBox="0 0 20 20"
+                           xmlns="http://www.w3.org/2000/svg"
+                        >
+                           <path
+                              d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
+                              fill-rule="evenodd"
+                              clip-rule="evenodd"
+                           ></path>
+                        </svg>
+                     </button>
+                  </div>
+
+                  <!-- Mobile Menu Button -->
+                  <div class="md:hidden text-3xl font-bold">
+                     <span
+                        class="cursor-pointer menu-button hover:text-text-green transition-all duration-300 focus:text-text-green"
+                        >&#9776;</span
+                     >
+                  </div>
+               </div>
+               <!-- Mobile Menu Content -->
+               <div class="hidden mt-12 mobile-menu">
+                  <div class="flex flex-col space-y-4 text-white text-center text-xl font-bold">
+                     <a href="#" class="block rounded-lg px-2 py-2 hover:bg-gray-900 transition-all duration-500"
+                        >Browse Topics</a
+                     >
+                     <a href="#" class="block rounded-lg px-2 py-2 hover:bg-gray-900 transition-all duration-500">How it works</a>
+                     <a href="#" class="block rounded-lg px-2 py-2 hover:bg-gray-900 transition-all duration-500">FAQ</a>
+                     <a href="#" class="block rounded-lg px-2 py-2 hover:bg-gray-900 transition-all duration-500">Support</a>
+                  </div>
+               </div>
+            </nav>
+
+            <!-- HERO Section -->
+            <div class="container pt-16 lg:pt-12 xl:pt-8 text-center">
+               <div class="md:mx-14 lg:mx-14 xl:mx-52 2xl:mx-60">
+                  <div class="text-white">
+                     <h1 class="text-4xl 2xl:text-5xl font-extrabold tracking-wide px-2">Premium services from premium agency</h1>
+                     <p class="py-6 text-sm text-gray-200 2xl:px-10">
+                        These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is
+                        untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be
+                        welcomed and every pain avoided.
+                     </p>
+                     <div class="md:pt-6 2xl:px-10">
+                        <div class="relative mt-1">
+                           <div class="flex absolute inset-y-0 right-0 items-center pr-4 lg:pr-6 pointer-events-none">
+                              <svg
+                                 class="w-6 h-6 lg:w-8 lg:h-8 text-gray-200 dark:text-gray-200"
+                                 fill="currentColor"
+                                 viewBox="0 0 20 20"
+                                 xmlns="http://www.w3.org/2000/svg"
+                              >
+                                 <path
+                                    fill-rule="evenodd"
+                                    d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
+                                    clip-rule="evenodd"
+                                 ></path>
+                              </svg>
+                           </div>
+                           <input
+                              type="text"
+                              id="table-search"
+                              class="w-full block h-16 md:h-20 lg:h-24 rounded-r-full rounded-l-full px-10 text-slate-900 bg-white placeholder:text-gray-300 focus:outline-none"
+                              placeholder="e.g. SEO, Design, Programming"
+                           />
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </header>
+      <section class="py-4 lg:mt-12 xl:mt-10">
+         <div class="container pt-4">
+            <div
+               class="flex flex-col items-center space-y-16 md:flex-row md:mx-10 md:space-x-40 md:items-end lg:mx-44 xl:mx-56 2xl:mx-96 xl:space-x-60"
+            >
+               <!-- Gadjets -->
+               <div class="bg-white w-32 rounded-xl shadow-lg py-2">
+                  <div class="flex flex-col space-y-1 justify-center p-4 text-center">
+                     <p class="text-[#f2b115] font-extrabold text-lg">92% <span>'</span></p>
+                     <p class="text-sm text-gray-400 pb-3">Growth rate of Companies</p>
+                     <!-- Bars -->
+                     <div class="flex space-x-1 rotate-180 justify-center">
+                        <span class="border-2 border-[#42c3af] rounded h-2"></span>
+                        <span class="border-2 border-[#f2b115] rounded h-4"></span>
+                        <span class="border-2 border-[#3655c6] rounded h-5"></span>
+                        <span class="border-2 border-[#42c3af] rounded h-4"></span>
+                        <span class="border-2 border-[#f2b115] rounded h-6"></span>
+                        <span class="border-2 border-[#8440f4] rounded h-4"></span>
+                        <span class="border-2 border-[#42c3af] rounded h-5"></span>
+                        <span class="border-2 border-[#3655c6] rounded h-3"></span>
+                     </div>
+                  </div>
+               </div>
+               <div class="bg-white w-72 h-32 p-2 rounded-3xl shadow-lg relative">
+                  <div class="flex space-x-1">
+                     <div class="pt-7 pl-4">
+                        <img src="./img/chargerLogo.png" alt="Energy" class="" />
+                     </div>
+
+                     <!-- Bars -->
+                     <div class="flex space-x-4 pl-6 pt-3">
+                        <p class="pt-3 text-xl font-extrabold text-[#42c3af] tracking-wide">+3.251%</p>
+                        <img src="./img/bars.png" class="h-8 pl-1" />
+                     </div>
+                  </div>
+                  <span class="absolute left-16 right-4 bottom-5 text-sm pl-12 text-gray-400">
+                     Percentage of monthly growth of the company</span
+                  >
+               </div>
+            </div>
+         </div>
+      </section>
+      <!--END of HEADER -->
+
+      <!-- TOPICS SECTION -->
+
+      <!-- END of TOPICS SECTION -->
+
+      <!-- SERVICE SECTION -->
+      <!-- END of SERVICE SECTION -->
+
+      <!-- SUPPORT SECTION -->
+      <!-- END of SUPPORT SECTION -->
+
+      <!-- FOOTER SECTION -->
+      <!-- END FOOTER SECTION -->
+
+      <!-- JS  -->
+      <script src="./js/main.js"></script>
    </body>
 </html>
