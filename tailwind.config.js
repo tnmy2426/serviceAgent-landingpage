@@ -5,6 +5,7 @@ module.exports = {
       extend: {
          backgroundImage: {
             header_bg: "url('./img/bgHeader.png')",
+            footer_bg: "url('./img/footerBg.png')",
          },
          colors: {
             main_clr: "#f8f8f8",
