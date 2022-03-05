@@ -16,6 +16,8 @@
       <script src="https://kit.fontawesome.com/a2c234ef4d.js" crossorigin="anonymous"></script>
       <!-- CSS -->
       <link rel="stylesheet" href="output.css" />
+      <!-- AOS Library -->
+      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
       <title>Service Agency Landing Page</title>
    </head>
    <body class="bg-main_clr dark:bg-neutral-900">
@@ -31,10 +33,10 @@
                   </div>
                   <!-- Primary Menu -->
                   <div class="hidden text-white md:flex space-x-6 items-center">
-                     <a href="#">Browse Topics</a>
-                     <a href="#">How it works</a>
-                     <a href="#">FAQ</a>
-                     <a href="#">Support</a>
+                     <a href="#topics">Browse Topics</a>
+                     <a href="#works">How it works</a>
+                     <a href="#faq">FAQ</a>
+                     <a href="#support">Support</a>
 
                      <!-- DARK mode Buuton -->
                      <button
@@ -78,18 +80,22 @@
                <!-- Mobile Menu Content -->
                <div class="hidden mt-12 mobile-menu">
                   <div class="flex flex-col space-y-4 text-white text-center text-xl font-bold">
-                     <a href="#" class="block rounded-lg px-2 py-2 hover:bg-gray-900 transition-all duration-500"
+                     <a href="#topics" class="block rounded-lg px-2 py-2 hover:bg-gray-900 transition-all duration-500"
                         >Browse Topics</a
                      >
-                     <a href="#" class="block rounded-lg px-2 py-2 hover:bg-gray-900 transition-all duration-500">How it works</a>
-                     <a href="#" class="block rounded-lg px-2 py-2 hover:bg-gray-900 transition-all duration-500">FAQ</a>
-                     <a href="#" class="block rounded-lg px-2 py-2 hover:bg-gray-900 transition-all duration-500">Support</a>
+                     <a href="#works" class="block rounded-lg px-2 py-2 hover:bg-gray-900 transition-all duration-500"
+                        >How it works</a
+                     >
+                     <a href="#faq" class="block rounded-lg px-2 py-2 hover:bg-gray-900 transition-all duration-500">FAQ</a>
+                     <a href="#support" class="block rounded-lg px-2 py-2 hover:bg-gray-900 transition-all duration-500"
+                        >Support</a
+                     >
                   </div>
                </div>
             </nav>
 
             <!-- HERO Section -->
-            <div class="container pt-16 lg:pt-12 xl:pt-8 text-center">
+            <div data-aos="zoom-in" class="container pt-16 lg:pt-12 xl:pt-8 text-center">
                <div class="md:mx-14 lg:mx-14 xl:mx-52 2xl:mx-60">
                   <div class="text-white">
                      <h1 class="text-4xl 2xl:text-5xl font-extrabold tracking-wide px-2">Premium services from premium agency</h1>
@@ -133,7 +139,7 @@
                class="flex flex-col items-center space-y-16 md:flex-row md:mx-10 md:space-x-40 md:items-end lg:mx-44 xl:mx-56 2xl:mx-96 xl:space-x-60"
             >
                <!-- Gadjets -->
-               <div class="bg-white w-32 rounded-xl shadow-lg py-2">
+               <div data-aos="fade-right" class="bg-white w-32 rounded-xl shadow-lg py-2">
                   <div class="flex flex-col space-y-1 justify-center p-4 text-center">
                      <p class="text-[#f2b115] font-extrabold text-lg">92% <span>'</span></p>
                      <p class="text-sm text-gray-400 pb-3">Growth rate of Companies</p>
@@ -150,7 +156,7 @@
                      </div>
                   </div>
                </div>
-               <div class="bg-white w-72 h-32 p-2 rounded-3xl shadow-lg relative">
+               <div data-aos="fade-left" class="bg-white w-72 h-32 p-2 rounded-3xl shadow-lg relative">
                   <div class="flex space-x-1">
                      <div class="pt-7 pl-4">
                         <img src="./img/logos/chargerLogo.png" alt="Energy" class="" />
@@ -172,15 +178,18 @@
       <!--END of HEADER -->
 
       <!-- TOPICS SECTION -->
-      <section class="lg:pt-8">
+      <section id="topics" class="lg:pt-8">
          <div class="container py-10">
-            <div class="flex flex-col space-y-4 md:px-12 lg:px-0">
+            <div data-aos="zoom-in" class="flex flex-col space-y-4 md:px-12 lg:px-0">
                <div class="title">
                   <h2 class="">What can we do for you?</h2>
                </div>
                <button class="btn">Learn More</button>
             </div>
-            <div class="flex flex-col md:px-12 lg:flex-row lg:space-x-10 xl:space-x-44 lg:items-center lg:px-0 lg:mt-10">
+            <div
+               data-aos="fade-right"
+               class="flex flex-col md:px-12 lg:flex-row lg:space-x-10 xl:space-x-44 lg:items-center lg:px-0 lg:mt-10"
+            >
                <div class="flex space-x-4 pt-8">
                   <div class="bg-secondary_clr w-6 h-1 rounded-l-full rounded-r-full mt-2"></div>
                   <span class="text-sm text-gray-400 2xl:pr-32"
@@ -195,7 +204,7 @@
                   >
                </div>
             </div>
-            <div class="mt-8 grid grid-cols-1 gap-10 md:grid-cols-2 md:gap-y-16 lg:grid-cols-4 lg:mt-16">
+            <div data-aos="fade-left" class="mt-8 grid grid-cols-1 gap-10 md:grid-cols-2 md:gap-y-16 lg:grid-cols-4 lg:mt-16">
                <div class="mx-auto relative drop-shadow-2xl rounded-3xl">
                   <img src="./img/seoCard.png" alt="SEO" />
                   <span class="absolute top-6 left-6"><p class="text-white font-bold uppercase">SEO</p></span>
@@ -216,7 +225,7 @@
          </div>
       </section>
       <section class="mt-12">
-         <div class="container">
+         <div data-aos="zoom-out" class="container">
             <div class="title text-center md:px-40 lg:px-60 xl:px-96 2xl:mx-32">
                <h2>Take a look at some <span class="text-secondary_clr">premium</span> projects</h2>
             </div>
@@ -236,10 +245,10 @@
       <!-- END of TOPICS SECTION -->
 
       <!-- SERVICE SECTION -->
-      <section class="py-4">
+      <section id="works" class="py-4">
          <div class="container my-10">
             <div class="flex flex-col space-y-10 lg:flex-row lg:items-center lg:space-x-10">
-               <div class="lg:basis-1/2 lg:px-32">
+               <div data-aos="fade-right" class="lg:basis-1/2 lg:px-32">
                   <div class="title text-5xl">
                      <h2>A team with creativity and an <span class="text-secondary_clr">advanced</span> imagination.</h2>
                   </div>
@@ -254,7 +263,7 @@
                      </p>
                   </div>
                </div>
-               <div class="lg:basis-1/2">
+               <div data-aos="fade-left" class="lg:basis-1/2">
                   <div class="flex space-x-2">
                      <div class="flex flex-col space-y-2">
                         <div class="">
@@ -281,7 +290,7 @@
       <!-- END of SERVICE SECTION -->
 
       <!-- FAQ SECTION -->
-      <section class="py-2">
+      <section id="faq" data-aos="fade-left" class="py-2">
          <div class="py-12 lg:py-28 float-right ml-8 md:ml-14 lg:ml-40 xl:ml-56">
             <div class="shadow-2xl rounded-l-[100px] relative">
                <img src="./img/faq_bg.png" alt="" srcset="" />
@@ -300,7 +309,7 @@
       <section class="inline-block py-8">
          <div class="p-4">
             <div class="grid grid-cols-1 gap-y-8 lg:grid-cols-2 lg:gap-x-4 lg:items-center">
-               <div class="md:pr-20 lg:pl-20 xl:pl-40 2xl:pl-60">
+               <div data-aos="fade-right" class="md:pr-20 lg:pl-20 xl:pl-40 2xl:pl-60">
                   <div class="title">
                      <h2 class="">Digital <span class="text-secondary_clr">solution</span> and transformation.</h2>
                   </div>
@@ -311,7 +320,7 @@
                      </p>
                   </div>
                </div>
-               <div class="image">
+               <div data-aos="fade-left" class="image">
                   <img src="./img/agency_pic.png" alt="" srcset="" />
                </div>
             </div>
@@ -320,15 +329,15 @@
       <!-- END of FAQ SECTION -->
 
       <!-- SUPPORT SECTION -->
-      <section class="my-10">
+      <section id="support" class="my-10">
          <div class="container md:px-24 lg:container">
-            <div class="md:mx-24 lg:px-40">
+            <div data-aos="zoom-in" class="md:mx-24 lg:px-40">
                <div class="title text-center">
                   <h2 class="2xl:text-5xl">You want to <span class="text-secondary_clr">grow</span>. We’re here to help.</h2>
                </div>
             </div>
             <div class="grid grid-cols-1 gap-y-8 items-center lg:grid-cols-2 lg:gap-x-12 xl:gap-x-24 2xl:gap-x-40 mt-10">
-               <div>
+               <div data-aos="fade-right">
                   <div class="font-extrabold text-2xl">
                      <h4 class="text-title_clr dark:text-white">Get in <span class="text-secondary_clr">touch</span> with us.</h4>
                   </div>
@@ -373,7 +382,7 @@
                      </div>
                   </div>
                </div>
-               <div class="contact-form mt-10 pb-20">
+               <div data-aos="fade-left" class="mt-10 pb-20">
                   <form>
                      <div class="mb-6">
                         <input
@@ -423,7 +432,7 @@
       <!-- FOOTER SECTION -->
       <footer class="bg-footer_bg max-h-max bg-cover bg-no-repeat bg-">
          <div class="container text-white">
-            <div class="flex flex-col items-center space-y-2 py-40">
+            <div data-aos="fade-up" class="flex flex-col items-center space-y-2 pt-40">
                <h4 class="text-4xl font-bold pt-4 tracking-wider">Let’s do this!</h4>
                <p class="pt-4 text-xs">Let’s get to work on a common project!</p>
                <p class="pt-4 pb-8 text-center text-xs lg:px-40 xl:px-72 2xl:px-96">
@@ -434,23 +443,23 @@
                   Write to us!
                </button>
             </div>
-            <div class="grid grid-cols-2 gap-x-4 gap-y-14 text-sm lg:grid-cols-4">
-               <div>
+            <div class="pt-20 grid grid-cols-2 gap-x-4 gap-y-14 text-sm lg:grid-cols-4">
+               <div data-aos="fade-right">
                   <img src="./img/logos/Logo.png" alt="LOGO" />
                </div>
-               <div class="flex flex-col space-y-4">
+               <div data-aos="fade-right" class="flex flex-col space-y-4">
                   <a href="http://">Browse Topics</a>
                   <a href="http://">How it Works</a>
                   <a href="http://">FAQ</a>
                   <a href="http://">Support</a>
                </div>
-               <div class="flex flex-col space-y-4">
+               <div data-aos="fade-left" class="flex flex-col space-y-4">
                   <a href="http://">Facebook</a>
                   <a href="http://">Instagram</a>
                   <a href="http://">LinkedIn</a>
                   <a href="http://">Twitter</a>
                </div>
-               <div class="flex flex-col pb-20">
+               <div data-aos="fade-left" class="flex flex-col pb-20">
                   <span>R#Bosila, Dhaka-1205</span>
                   <span>Dhaka, Bangladesh</span>
                   <span class="pt-4">+880 1312898200, +880 1722888200</span>
@@ -461,6 +470,15 @@
          </div>
       </footer>
       <!-- END FOOTER SECTION -->
+
+      <!-- AOS Library -->
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+      <script>
+         AOS.init({
+            offset: 120,
+            duration: 1200,
+         });
+      </script>
 
       <!-- JS  -->
       <script src="./js/main.js"></script>
